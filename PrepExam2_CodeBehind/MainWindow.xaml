@@ -1,0 +1,103 @@
+﻿<Window x:Class="PrepExam2_CodeBehind.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrepExam2_CodeBehind"
+        mc:Ignorable="d"
+        Title="Application CodeBehind" Height="700" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel 
+            HorizontalAlignment="Left" Height="527" Margin="10,20,0,0" 
+            VerticalAlignment="Top" Width="324">
+            <Label Content="Nom:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="33" Width="324"/>
+            <TextBox
+                x:Name="txtBoxNom"
+                HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" 
+                Text="" VerticalAlignment="Top" Width="324"
+                VerticalContentAlignment="Center" 
+                HorizontalContentAlignment="Center"
+            />
+            <Label 
+                Content="Code" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Height="33" Width="324"
+            />
+            <TextBox 
+                x:Name="txtBoxCode"
+                HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" 
+                Text="" VerticalAlignment="Top" Width="324"
+                VerticalContentAlignment="Center" 
+                HorizontalContentAlignment="Center"
+            />
+            <Label 
+                Content="Prix:" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Height="33" Width="324"/>
+            <TextBox 
+                x:Name="txtBoxPrix"
+                HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" 
+                Text="" VerticalAlignment="Top" Width="324"
+                VerticalContentAlignment="Center" 
+                HorizontalContentAlignment="Center"
+            />
+            <Label 
+                Content="Prix Vente:" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Height="33" Width="324"
+            />
+            <TextBox
+                x:Name="txtBoxPrixVente"
+                HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" 
+                Text="" VerticalAlignment="Top" Width="324"
+                VerticalContentAlignment="Center" 
+                HorizontalContentAlignment="Center"/>
+            <Label
+                Content="Quantité:" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Height="33" Width="324"/>
+            <TextBox
+                x:Name="txtBoxQuantite"
+                HorizontalAlignment="Left" Height="31" TextWrapping="Wrap" 
+                Text="" VerticalAlignment="Top" Width="324"
+                VerticalContentAlignment="Center" 
+                HorizontalContentAlignment="Center"/>
+            <Label 
+                x:Name="lblErreur" Content="" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Height="60" Width="324" VerticalContentAlignment="Center" 
+                HorizontalContentAlignment="Center"/>
+            <Button 
+                x:Name="btnSave" Content="Sauvegarder" 
+                Height="63" Width="324" Click="btnSave_Click"/>
+        </StackPanel>
+        <TextBlock 
+            x:Name="txtBlockDisplay"
+            Text="Le sommaire de vos produits s'affichera , ici, après la sauvegarde ou bien après vôtre recherche par code!!!"
+            HorizontalAlignment="Left" 
+            Height="124" Margin="339,20,0,0" TextWrapping="Wrap" 
+            VerticalAlignment="Top" Width="246"/>
+
+
+        <Button 
+            x:Name="btnOuvrir" Content="Ouvrir (avec code)" 
+            HorizontalAlignment="Left" Margin="339,265,0,0" 
+            VerticalAlignment="Top" Height="61" Width="324" Click="btnOuvrir_Click"
+        />
+        <TextBox 
+            x:Name="txtBoxRechcherCode"
+            Text=""
+            HorizontalAlignment="Left" Height="44" Margin="339,216,0,0" 
+            TextWrapping="Wrap" VerticalAlignment="Top" Width="324"
+            VerticalContentAlignment="Center" 
+            HorizontalContentAlignment="Center"
+        />
+        <Label 
+            Content="Recherche par code:" HorizontalAlignment="Left" 
+            Height="62" Margin="339,149,0,0" VerticalAlignment="Top" Width="162" 
+            VerticalContentAlignment="Bottom"
+        />
+
+
+    </Grid>
+</Window>
