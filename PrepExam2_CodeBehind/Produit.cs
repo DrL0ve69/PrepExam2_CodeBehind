@@ -81,11 +81,11 @@ namespace PrepExam2_CodeBehind
         public Produit()
         {
         }
-        public Produit(string nom, int Code, double prix, double prixVente, int quantite)
+        public Produit(string nom, int code, double prix, double prixVente, int quantite)
         {
             
             Nom = nom;
-            Code = Code;
+            Code = code;
             Prix = prix;
             PrixVente = prixVente;
             Quantite = quantite;
